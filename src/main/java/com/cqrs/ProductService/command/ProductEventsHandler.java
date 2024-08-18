@@ -25,7 +25,9 @@ public class ProductEventsHandler {
 
         productRepository.save(product);
 
-        throw new Exception("Some Exception");
+        // uncomment this exception to see cqrs in action
+        // roles back the prouct insertion
+        //throw new Exception("Some Exception");
     }
 
     @ExceptionHandler
